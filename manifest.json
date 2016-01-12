@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Word Replacement",
+  "short_name": "WordReplace",
+  "description": "Replace any word with any other word.",
+  "version": "0.0",
+
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js", "findAndReplaceDOMText.js", "content_script.js"]
+    }
+  ]
+}
